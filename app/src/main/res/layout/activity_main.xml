@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sjw.myglide.MainActivity">
+
+    <TextView
+        android:id="@+id/normal_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="普通显示图片"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/normal_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/normal_tv"
+
+        />
+
+    <TextView
+        android:id="@+id/simple_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SimpleTarget图片"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/normal_iv" />
+
+    <ImageView
+        android:id="@+id/simple_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/simple_tv"
+
+        />
+
+    <TextView
+        android:id="@+id/viewtarget_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="viewtarget图片"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/simple_iv" />
+
+    <com.sjw.myglide.CustomView
+        android:id="@+id/viewtarget_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewtarget_tv"
+
+        />
+
+    <TextView
+        android:id="@+id/tranformtion_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tranformtion图片"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewtarget_iv" />
+
+    <ImageView
+        android:id="@+id/tranformtion_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tranformtion_tv"
+
+        />
+
+    <TextView
+        android:id="@+id/animate_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="animate_iv图片"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tranformtion_iv" />
+
+    <ImageView
+        android:id="@+id/animate_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/animate_tv"
+
+        />
+
+    <TextView
+        android:id="@+id/animate2_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义控件图片带动画"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/animate_iv" />
+
+    <com.sjw.myglide.CustomView
+        android:id="@+id/animate2_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/animate2_tv"
+
+        />
+</android.support.constraint.ConstraintLayout>
